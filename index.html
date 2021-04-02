@@ -13,14 +13,13 @@
         vr-mode-ui="enabled: false"
         arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false;'
         renderer='antialias: true; alpha: true'>
-            <a-camera gps-projected-camera rotation-reader></a-camera>
+            <a-camera gps-projected-camera rotation-reader position="0 10 0"></a-camera>
             <a-box gps-projected-entity-place='latitude: 30.226476; longitude: -97.762152' material='color: red' scale='10 10 10'></a-box>
             <a-sphere gps-projected-entity-place='latitude: 30.226076; longitude: -97.762152' material='color: blue' scale='10 10 10'></a-sphere>
             <a-text
         value="Box and Ball."
         look-at="[gps-camera]"
         scale="120 120 120"
-        rotation="0 180 0"
         gps-projected-entity-place="latitude: 30.226476; longitude: -97.762552;"
       ></a-text>
         </a-scene>
