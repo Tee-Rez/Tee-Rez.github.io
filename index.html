@@ -15,12 +15,12 @@
         renderer='antialias: true; alpha: true'>
             <a-camera gps-projected-camera rotation-reader></a-camera>
             <a-box gps-projected-entity-place='latitude: 30.226476; longitude: -97.762152' material='color: red' scale='10 10 10'></a-box>
-            <a-sphere gps-projected-entity-place='latitude: 30.226076; longitude: -97.762152' material='color: blue' scale='20 20 20'></a-sphere>
+            <a-sphere gps-projected-entity-place='latitude: 30.226076; longitude: -97.762152' material='color: blue' scale='10 10 10'></a-sphere>
             <a-text
         value="Box and Ball."
         look-at="[gps-camera]"
         scale="120 120 120"
-        gps-entity-place="latitude: 30.226476; longitude: -97.762552;"
+        gps-projected-entity-place="latitude: 30.226476; longitude: -97.762552;"
       ></a-text>
         </a-scene>
     </body>
