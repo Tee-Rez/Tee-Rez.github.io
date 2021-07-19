@@ -37,6 +37,7 @@
         <!-- Look-at component. We don't need this now, but we will later. -->
         <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
         <script type='text/javascript' src='peakfinder.js'></script>
+        <script src="js/bundle.js"></script>
     </head>
     <body>
     <a-scene
@@ -44,14 +45,7 @@
         arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false;'
         renderer='antialias: true; alpha: true'>
             <a-camera gps-projected-camera rotation-reader></a-camera>
-            <a-box gps-projected-entity-place='latitude: 30.229032; longitude: -97.762752' material='color: red' scale='10 10 10'></a-box>
-            <a-text
-            value="This content will always face you."
-            look-at="[gps-camera]"
-            scale="120 120 120"
-            gps-entity-place="latitude: 30.229032; longitude: -97.762752;"
-          ></a-text>
-          <a-camera gps-camera rotation-reader> </a-camera>
+            <a-entity peakfinder></a-entity>        
         </a-scene>
     </body>
 </html>
